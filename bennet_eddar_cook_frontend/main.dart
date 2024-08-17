@@ -36,7 +36,7 @@ Future<void> main() async {
   await Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform,);
   await my_init_app();
   // Initialize Firebase App Check
-  await FirebaseAppCheck.instance.activate(webProvider: ReCaptchaEnterpriseProvider('6LdVyzcpAAAAALscd_36GAFcJoHYdMqt6r48my3R'));
+  await FirebaseAppCheck.instance.activate(webProvider: ReCaptchaEnterpriseProvider('***'));
   runApp(
     const MyApp(),
   );
