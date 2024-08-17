@@ -1,0 +1,23 @@
+
+import 'package:flutter/material.dart';
+import '../../commons/styles.dart';
+
+class TopBar2 extends StatelessWidget implements PreferredSizeWidget {
+  final String title;
+
+  const TopBar2({super.key, required this.title});
+
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      title: Text(
+        title,
+        style: AppFonts.titleAppBarTextStyle2,
+      ),
+      leading: const Icon(Icons.keyboard_arrow_left),
+    );
+  }
+}
